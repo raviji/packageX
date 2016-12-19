@@ -1,0 +1,248 @@
+body {
+    background: #616e77;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*
+================ Flip 1 ===================*/
+
+#wrap1 {
+    position: absolute;
+}
+
+.card1 {
+    display: block;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    z-index: 1;
+    margin: 0px;
+    float: left;
+}
+
+.card1 .inner-card1 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 200px 200px 0 0;
+    border-color: #93a9ce transparent transparent transparent;
+}
+
+.card1 .wrap1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform .4s linear;
+    transition: transform .4s linear;
+}
+
+.card1 .wrap1.flipped1 .name1,
+.card1 .wrap1.flipped1 .flip1 {
+    background: none;
+    color: white;
+}
+
+.card1 .face1 {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.card1 .face1 a.flip1,
+.card1 .face1 a.flipback1 {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 2;
+}
+
+.card1.face1.back1 {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.d1 .wrap1.flipped1 {
+    -ms-transform: rotate3d(90, -90, 0, 180deg);
+    -webkit-transform: rotate3d(90, -90, 0, 180deg);
+    transform: rotate3d(90, -90, 0, 180deg);
+}
+
+.d1 .face1.back1 {
+    -ms-transform: rotate3d(90, -90, 0, 180deg);
+    -webkit-transform: rotate3d(90, -90, 0, 180deg);
+    transform: rotate3d(90, -90, 0, 180deg);
+}
+
+
+/*
+================ Flip 2 ===================*/
+
+#triangle-bottomright {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid red;
+    border-left: 100px solid transparent;
+}
+
+#wrap2 {
+    position: absolute;
+}
+
+.card2 {
+    display: block;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    z-index: 1;
+    margin: 0px;
+    float: left;
+}
+
+.card2 .inner-card2 {
+    width: 0;
+    height: 0;
+    border-bottom: 200px solid #b3c784;
+    border-left: 200px solid transparent;
+}
+
+.card2 .wrap2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform .4s linear;
+    transition: transform .4s linear;
+}
+
+.card2 .wrap2.flipped2 .name2,
+.card2 .wrap2.flipped2 .flip2 {
+    background: none;
+    color: white;
+}
+
+.card2 .face2 {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+}
+
+.card2 .face2 a.flip2,
+.card2 .face2 a.flipback2 {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 5px;
+    left: 5px;
+    z-index: 2;
+}
+
+.card2.face2.back2 {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.d2 .wrap2.flipped2 {
+    -ms-transform: rotate3d(90, -90, 0, 180deg);
+    -webkit-transform: rotate3d(90, -90, 0, 180deg);
+    transform: rotate3d(90, -90, 0, 180deg);
+}
+
+.d2 .face2.back2 {
+    -ms-transform: rotate3d(90, -90, 0, 180deg);
+    -webkit-transform: rotate3d(90, -90, 0, 180deg);
+    transform: rotate3d(90, -90, 0, 180deg);
+}
+
+.wrapper {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+.bg {
+    background: #fff;
+}
+
+.header h2 {
+    color: #93a9ce;
+    text-align: center;
+}
+
+.container {
+    width: 830px;
+}
+
+.shape_section {
+    width: 100%;
+    margin: 0 0 20px 0;
+}
+
+.box {
+    width: 100%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.box li {
+    float: left;
+    height: 200px;
+    width: 200px;
+    border: 1px solid #ccc;
+    list-style-type: none;
+}
+
+.cb {
+    color: #93a9ce;
+}
+
+.btn-bdr {
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    color: #93a9ce;
+    border: 2px solid #93a9ce;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.mt20 {
+    margin-top: 20px
+}
+
+.mt40 {
+    margin-top: 40px
+}
+
+.footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+svg polygon {
+    z-index: 100;
+    position: absolute;
+    cursor: pointer;
+}
