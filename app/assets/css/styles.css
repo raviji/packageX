@@ -2,6 +2,7 @@ body {
     background: #616e77;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
 }
 
 
@@ -245,4 +246,59 @@ svg polygon {
     z-index: 100;
     position: absolute;
     cursor: pointer;
+}
+
+/*
+===================== Templates Styles ===================*/
+.contentsWrapper figure img{
+    width: 100%;
+    max-width: 100%;
+}
+
+.contents{
+    background: #000;
+    padding: 20px;
+}
+.contents figure{
+    margin: 0 0 20px 0;
+}
+
+.contents img{
+    width: 100%;
+    max-width: 100%;
+}
+.contents h4{
+    font-size: 23px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #6f6f6f;
+}
+
+.contents p{
+    color: #6f6f6f;
+    margin: 0 0 15px 0;
+}
+
+.contents h5{
+    font-size: 23px;
+    font-weight: 800;
+    color: #6f6f6f;
+    margin: 20px 0 10px 0;
+}
+
+.controlButton {
+    float: left;
+    margin: 10px;
+    height: 15px;
+    width: auto;
+}
+canvas{
+    width: 100% !important;
+    height: 100% !important;
+}
+#outres{
+    width: 200px; 
+    height: 200px; 
+    position: relative; 
+    z-index: 99999;
 }
