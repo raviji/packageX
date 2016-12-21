@@ -224,3 +224,26 @@ canvas {
     position: relative;
     z-index: 99999;
 }
+
+.closeBtn{
+    float: right;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: none !important;
+    filter: alpha(opacity=20);
+    opacity: 1;
+    background: #fff !important;
+    position: absolute;
+    right: -21px;
+    padding: 0px !important;
+    top: -18px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.closeBtn:hover{
+    opacity: 1;
+}
