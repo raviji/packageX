@@ -73,7 +73,7 @@ body {
 }
 
 .container {
-    width: 830px;
+    max-width: 830px;
 }
 
 .shape_section {
