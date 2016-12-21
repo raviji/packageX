@@ -24,8 +24,12 @@
 <body>
     <div class="container bg">
         <div class="header clearfix">
-            <h1 class="text-muted"><a href=""><img src="assets/img/color-box-logo.png" /></a></h1>
+            <h1 class="text-muted">
+                <a href=""><img src="assets/img/color-box-logo.png" /></a>
+            </h1>
+            <button class="click" type="button">click</button>
             <h2>Let your packaging tell your story</h2>
+
         </div>
 
         <section class="shape_section">
@@ -278,6 +282,14 @@
     <script src="bower_includes/scripts/angular.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bower_includes/scripts/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $("#bottomFlip").mouseenter(function() {
+                $("#bottomFlip").toggleClass("ft");
+            });
+        });
+    </script>
 </body>
 
 </html>
