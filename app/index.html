@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="">
+<html lang="en" ng-app="GPApp">
 
 <head>
     <meta charset="utf-8">
@@ -21,20 +21,20 @@
     <![endif]-->
 </head>
 
-<body onload="load();">
+<body onload="load();" ng-controller="mainCtrl">
     <div class="container bg">
         <div class="header clearfix">
             <h1 class="text-muted">
                 <a href=""><img src="assets/img/color-box-logo.png" /></a>
             </h1>
-            
+
             <h2>Let your packaging tell your story</h2>
 
         </div>
 
         <section class="shape_section">
             <ul class="box">
-                <li class="ne">
+                <li class="ne" id="svg-1">
                     <svg width="200px" height="200px">
                         <defs>
                             <pattern id="img1" patternUnits="userSpaceOnUse" width="200" height="200">					
@@ -50,7 +50,7 @@
                         <polygon points="0,200 200,0 200,200" style="fill:#96bbb9;" />
                     </svg>
                 </li>
-                <li class="ns">
+                <li class="ns" id="svg-2">
                     <svg width="200px" height="200px">
                         
                         <defs>
@@ -278,82 +278,84 @@
     </div>
 
 
-<div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="tempA">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-        <button type="button" class="close closeBtn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <div class="modal-body">
-            <section class="contentsWrapper">
-                <div class="row">
-                    <div class="col-md-12">
-                        <figure>
-                        <img src="assets/img/Color-Box-Template-A.jpg">
-                        </figure>
-                        <section class="contents">
-                            <div class="row">
-                                <div class="col-md-8">
-                                    <h4>the perfect pairing</h4>
-                                    <p>E.J. Gallo's Dark House Wine and Georgia-Pacific Color-Box<sup>&copy;</sup> packaging</p>
-                                    <p>The Dark House name reflects both the brand and the individual behind it. From the bold Big Red Blend to a crisp Sauvignon Blanc, Beth Liston's passion for creating exceptional wines that outperform their price is unparalleled.</p>
-                                    <p>Color-Box packaging solutions are more than just sturdy and efficient delivery vehicles, they are the canvas for telling your brand story in a way that's as unique and compelling as your product.</p>
-                                    <h5>Let Your packaging Tell Your Story</h5>
-                                </div>
-                                <div class="col-md-4 text-center">
-                                    <figure>
-                                        <div id="outres"></div>
-                                    </figure>
-                                    <figure>
-                                        <img src="assets/img/color_box_logo.jpg">
-                                    </figure>
-                                </div>
+    <div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="tempA">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <button type="button" class="close closeBtn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div class="modal-body">
+                    <section class="contentsWrapper">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <figure>
+                                    <img src="assets/img/Color-Box-Template-A.jpg">
+                                </figure>
+                                <section class="contents">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <h4>the perfect pairing</h4>
+                                            <p>E.J. Gallo's Dark House Wine and Georgia-Pacific Color-Box<sup>&copy;</sup> packaging</p>
+                                            <p>The Dark House name reflects both the brand and the individual behind it. From the bold Big Red Blend to a crisp Sauvignon Blanc, Beth Liston's passion for creating exceptional wines that outperform their price
+                                                is unparalleled.</p>
+                                            <p>Color-Box packaging solutions are more than just sturdy and efficient delivery vehicles, they are the canvas for telling your brand story in a way that's as unique and compelling as your product.</p>
+                                            <h5>Let Your packaging Tell Your Story</h5>
+                                        </div>
+                                        <div class="col-md-4 text-center">
+                                            <figure>
+                                                <div id="outres"></div>
+                                            </figure>
+                                            <figure>
+                                                <img src="assets/img/color_box_logo.jpg">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </section>
                             </div>
-                        </section>
-                    </div>
+                        </div>
+                    </section>
                 </div>
-            </section>    
+            </div>
         </div>
     </div>
-  </div>
-</div>
 
 
-<div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="tempB">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-        <button type="button" class="close closeBtn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <div class="modal-body">
-            <section class="contentsWrapper">
-                <div class="row">
-                    <div class="col-md-12">
-                        <figure>
-                            <img src="assets/img/Color-Box-Template-B.jpg">
-                        </figure>
-                        <section class="contents">
-                            <div class="row">
-                                <div class="col-md-8">
-                                    <h4>the perfect pairing</h4>
-                                    <p>E.J. Gallo's Dark House Wine and Georgia-Pacific Color-Box<sup>&copy;</sup> packaging</p>
-                                    <p>The Dark House name reflects both the brand and the individual behind it. From the bold Big Red Blend to a crisp Sauvignon Blanc, Beth Liston's passion for creating exceptional wines that outperform their price is unparalleled.</p>
-                                    <p>Color-Box packaging solutions are more than just sturdy and efficient delivery vehicles, they are the canvas for telling your brand story in a way that's as unique and compelling as your product.</p>
-                                    <h5>Let Your packaging Tell Your Story</h5>
-                                </div>
-                                <div class="col-md-4 text-center">
-                                    <figure>
-                                        <div id="outres"></div>
-                                    </figure>
-                                    <figure>
-                                        <img src="assets/img/color_box_logo.jpg">
-                                    </figure>
-                                </div>
+    <div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="tempB">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <button type="button" class="close closeBtn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div class="modal-body">
+                    <section class="contentsWrapper">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <figure>
+                                    <img src="assets/img/Color-Box-Template-B.jpg">
+                                </figure>
+                                <section class="contents">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <h4>the perfect pairing</h4>
+                                            <p>E.J. Gallo's Dark House Wine and Georgia-Pacific Color-Box<sup>&copy;</sup> packaging</p>
+                                            <p>The Dark House name reflects both the brand and the individual behind it. From the bold Big Red Blend to a crisp Sauvignon Blanc, Beth Liston's passion for creating exceptional wines that outperform their price
+                                                is unparalleled.</p>
+                                            <p>Color-Box packaging solutions are more than just sturdy and efficient delivery vehicles, they are the canvas for telling your brand story in a way that's as unique and compelling as your product.</p>
+                                            <h5>Let Your packaging Tell Your Story</h5>
+                                        </div>
+                                        <div class="col-md-4 text-center">
+                                            <figure>
+                                                <div id="outres"></div>
+                                            </figure>
+                                            <figure>
+                                                <img src="assets/img/color_box_logo.jpg">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </section>
                             </div>
-                        </section>
-                    </div>
+                        </div>
+                    </section>
                 </div>
-            </section>   
+            </div>
         </div>
     </div>
-  </div>
-</div>
 
 
 
@@ -363,14 +365,7 @@
     <script src="bower_includes/scripts/angular.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bower_includes/scripts/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function() {
-
-            $("#bottomFlip").mouseenter(function() {
-                $("#bottomFlip").toggleClass("ft");
-            });
-        });
-    </script>
+    <script src="assets/js/app.js"></script>
 
 
     <!-- 3D Box -->
