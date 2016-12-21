@@ -141,8 +141,6 @@ svg polygon:hover {
 }*/
 
 .ne polygon {
-    z-index: 100;
-    position: absolute;
     transform-origin: center center;
     transition: all 0.5s linear 0.5s;
     -webkit-transform-origin: center center;
@@ -152,12 +150,9 @@ svg polygon:hover {
 .ne polygon:hover {
     transform: rotate3d(1, -1, 0, 180deg);
     -webkit-transform: rotate3d(1, -1, 0, 180deg);
-    z-index: 500;
 }
 
 .ns polygon {
-    z-index: 100;
-    position: absolute;
     transform-origin: center center;
     transition: all 0.5s linear 0.5s;
     -webkit-transform-origin: center center;
@@ -167,7 +162,6 @@ svg polygon:hover {
 .ns polygon:hover {
     transform: rotate3d(1, 1, 0, 180deg);
     -webkit-transform: rotate3d(1, 1, 0, 180deg);
-    z-index: 500;
 }
 
 
