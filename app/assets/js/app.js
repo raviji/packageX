@@ -4,8 +4,9 @@ App.controller("mainCtrl", function($scope) {
 
 
     var polygon = $("svg polygon");
-
+    
     var i = polygon.length;
+    
     while (i--) {
         $(polygon).mouseenter(function(e) {
             $(e.target).parent().append(e.target);
@@ -19,15 +20,29 @@ function randomXToY(minVal,maxVal)
 }
     
     function  toggleSomething1(){
-        var random = randomXToY(1,10);
+        var total = $("svg image").length;
+        //console.log($("svg image").length)
+        var random = randomXToY(1,total);
+           // console.log(random)
           var d = document.getElementById(random);
-         var x =d.classList;
+          var x =d.classList;
+          var parentClass=$(d).parent().parent().prop('className');
+          //console.log(parentClass,random);
+          if(parentClass="ne"){
+         
          if(x==0){
-         d.classList.add("hover1");}
+             d.classList.remove("hover1");
+         d.classList.add("hover1");
+        d.classList.remove("hover1");}
          else{
+             d.classList.remove("hover1");
          d.classList.remove("a");
          d.classList.remove("hover1")
          }
+          }
+          else{
+             // toggleSomething2();
+          }
          //console.log(d.classList)
           //console.log(x.length)
       
@@ -35,8 +50,14 @@ function randomXToY(minVal,maxVal)
 }
 
     function  toggleSomething2(){
-        var random = randomXToY(13,22);
+        var total = $("svg image").length-2;
+        //console.log(total)
+        var random = randomXToY(1,total);
           var d = document.getElementById(random);
+          var parentClass=$(d).parent().parent().prop('className');
+          //console.log(parentClass,random);
+         
+          if(parentClass=="ns"){
          var x =d.classList;
         
          if(x==0){
@@ -45,6 +66,10 @@ function randomXToY(minVal,maxVal)
          d.classList.remove("a");
          d.classList.remove("hover2")
          }
+          }
+           else{
+             // toggleSomething1();
+          }
          //console.log(d.classList)
           //console.log(x.length)
       
