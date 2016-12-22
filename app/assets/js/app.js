@@ -19,7 +19,7 @@ function randomXToY(minVal,maxVal)
 }
     
     function  toggleSomething1(){
-        var random = randomXToY(1,12);
+        var random = randomXToY(1,10);
           var d = document.getElementById(random);
          var x =d.classList;
          if(x==0){
@@ -35,7 +35,7 @@ function randomXToY(minVal,maxVal)
 }
 
     function  toggleSomething2(){
-        var random = randomXToY(13,24);
+        var random = randomXToY(13,22);
           var d = document.getElementById(random);
          var x =d.classList;
         
