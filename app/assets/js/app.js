@@ -10,11 +10,11 @@ App.controller("mainCtrl", function($scope, $timeout) {
 
     var i = polygon.length;
 
-    while (i--) {
-        $(polygon).mouseenter(function(e) {
-            $(e.target).parent().append(e.target);
-        });
-    }
+    //while (i--) {
+    $(polygon).mouseenter(function(e) {
+        $(e.target).parent().append(e.target);
+    });
+    //}
     /** random */
     function randomXToY(minVal, maxVal) {
         var randVal = minVal + (Math.random() * (maxVal - minVal));
@@ -89,8 +89,16 @@ App.controller("mainCtrl", function($scope, $timeout) {
         //console.log("left");
         var count = 0;
         startstop(check);
-
-
-
     });
+
+    //*****************    Popup     *******************//
+    // var h = $(window).height();
+    // var w = $(window).width();
+
+    // console.log(h, w);
+    // if (h >= 600) {
+    //     $(".contentsWrapper figure img").css("width:50%");
+    // }
+    //.contentsWrapper figure img
+
 });

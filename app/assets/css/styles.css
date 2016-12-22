@@ -143,7 +143,6 @@ svg polygon:hover {
 .ne polygon {
     transform-origin: center center;
     transition: all 0.5s linear 0.5s;
-    
     -webkit-transform-origin: center center;
     -webkit-transition: all 0.5s linear 0.5s;
     -moz-transform-origin: center center;
@@ -157,7 +156,6 @@ svg polygon:hover {
 .ne polygon:hover {
     cursor: pointer;
     transform: rotate3d(1, -1, 0, 180deg);
-    
     -webkit-transform: rotate3d(1, -1, 0, 180deg);
     -moz-transform: rotate3d(1, -1, 0, 180deg);
     -o-transform: rotate3d(1, -1, 0, 180deg);
@@ -166,7 +164,6 @@ svg polygon:hover {
 
 .hover1 {
     transform: rotate3d(1, -1, 0, 180deg);
-    
     -webkit-transform: rotate3d(1, -1, 0, 180deg);
     -moz-transform: rotate3d(1, -1, 0, 180deg);
     -o-transform: rotate3d(1, -1, 0, 180deg);
@@ -175,7 +172,6 @@ svg polygon:hover {
 
 .hover2 {
     transform: rotate3d(1, 1, 0, 180deg);
-    
     -webkit-transform: rotate3d(1, 1, 0, 180deg);
     -moz-transform: rotate3d(1, 1, 0, 180deg);
     -o-transform: rotate3d(1, 1, 0, 180deg);
@@ -185,7 +181,6 @@ svg polygon:hover {
 .ns polygon {
     transform-origin: center center;
     transition: all 0.5s linear 0.5s;
-
     -webkit-transform-origin: center center;
     -webkit-transition: all 0.5s linear 0.5s;
     -moz-transform-origin: center center;
@@ -199,7 +194,6 @@ svg polygon:hover {
 .ns polygon:hover {
     cursor: pointer;
     transform: rotate3d(1, 1, 0, 180deg);
-    
     -webkit-transform: rotate3d(1, 1, 0, 180deg);
     -moz-transform: rotate3d(1, 1, 0, 180deg);
     -o-transform: rotate3d(1, 1, 0, 180deg);
@@ -310,7 +304,7 @@ canvas {
     }
 }
 
-@media (min-width: 320px) and (max-width: 1023px){
+@media (min-width: 320px) and (max-width: 1023px) {
     .btn-bdr {
         margin: 0 0 10px 0;
     }
@@ -323,6 +317,26 @@ canvas {
     }
 }
 
+@media only screen and (min-width: 920px) {
+    .contentsWrapper figure img {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .contentsWrapper figure img {
+        width: 40%;
+    }
+    .contents h4 {
+        font-size: 2.5vh;
+    }
+    .contents p {
+        font-size: 1.8vh;
+    }
+    .contents h5 {
+        font-size: 2.2vh;
+    }
+}
 
 
 /* ----------- iPhone 5 and 5S ----------- */
@@ -343,12 +357,11 @@ canvas {
 
 /* Portrait */
 
-@media only screen 
-and (min-device-width: 320px) 
-and (max-device-width: 568px) 
-and (-webkit-min-device-pixel-ratio: 2) 
-and (orientation: portrait) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
 
+figure {
+    text-align: center;
+    background: #000;
 }
 
 
