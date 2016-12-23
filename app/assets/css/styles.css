@@ -228,6 +228,7 @@ svg polygon:hover {
     font-weight: 800;
     text-transform: uppercase;
     color: #6f6f6f;
+    margin: 0 0 10px 0;
 }
 
 .contents p {
@@ -254,12 +255,12 @@ canvas {
     height: 100% !important;
 }
 
-#outres {
+/*#outres {
     width: 200px;
     height: 200px;
     position: relative;
     z-index: 99999;
-}
+}*/
 
 .closeBtn {
     float: right;
@@ -284,6 +285,24 @@ canvas {
     opacity: 1;
 }
 
+.colorBoxLogo img{
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.modal-body{
+    padding: 10px;
+}
+
+
+/*
+===================== Modal =====================*/
+@media (min-width: 768px){
+    .modal-dialog {
+        width: 700px;
+        margin: 150px auto 30px auto;
+    }
+}
 
 /*
 ===================== Media Queries ===================*/
@@ -317,9 +336,25 @@ canvas {
     }
 }
 
+
+
 @media only screen and (min-width: 920px) {
     .contentsWrapper figure img {
         width: 50%;
+    }
+}
+@media only screen and (max-width: 699px) {
+    .contentsWrapper figure img {
+        width: 40%;
+    }
+}
+
+
+@media (min-width: 479px) and (max-width: 991px) {
+    .contents figure {
+        width: 50%;
+        float: left;
+        margin: 20px 0 0 0;
     }
 }
 
