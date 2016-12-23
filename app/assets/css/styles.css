@@ -294,6 +294,10 @@ canvas {
     padding: 10px;
 }
 
+.mainImg{
+    padding: 10px 0 0 0;
+}
+
 
 /*
 ===================== Modal =====================*/
@@ -336,7 +340,11 @@ canvas {
     }
 }
 
-
+@media (min-width: 768px){
+    .colorBoxLogo{
+        margin: 50px 0 0 0 !important;
+    }
+}
 
 @media only screen and (min-width: 920px) {
     .contentsWrapper figure img {
@@ -386,6 +394,8 @@ canvas {
         font-size: 2.2vh;
     }
 }
+
+
 
 
 /* ----------- iPhone 5 and 5S ----------- */
