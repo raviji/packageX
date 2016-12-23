@@ -103,7 +103,17 @@ App.controller("mainCtrl", function($scope, $timeout) {
 
     });
 
-    $(".modal-backdrop").click(function() {
+    $(".closeBtn").click(function() {
+        $timeout(function() {
+
+            console.log("start")
+            check = false;
+            startstop(check);
+
+        }, 2000);
+
+    });
+      $(".modal-backdrop").click(function() {
         $timeout(function() {
 
             console.log("start")
