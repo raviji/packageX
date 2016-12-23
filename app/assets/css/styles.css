@@ -347,6 +347,12 @@ canvas {
     .contentsWrapper figure img {
         width: 40%;
     }
+    .contents p{
+        font-size: 1.5vh;
+    }
+    .contents h5, .contents h4{
+        font-size: 2vh;
+    }
 }
 
 
@@ -354,7 +360,15 @@ canvas {
     .contents figure {
         width: 50%;
         float: left;
-        margin: 20px 0 0 0;
+    }
+
+    .contents figure.colorBoxLogo{
+        margin: 50px 0 0 0;
+    }
+
+    .colorBoxLogo img{
+        width: 100%;
+        max-width: 100%;
     }
 }
 
