@@ -75,30 +75,23 @@ App.controller("mainCtrl", function($scope, $timeout) {
 
     }
 
+    $(document).ready(function() {
+        check = false;
+        startstop(check);
+    });
+
+
     $(".box").mouseenter(function() {
         check = true;
-
-
         startstop(check);
-
     });
     $(".box").mouseleave(function() {
 
         check = false;
-        //console.log(check);
-        //console.log("left");
         var count = 0;
         startstop(check);
     });
 
-    //*****************    Popup     *******************//
-    // var h = $(window).height();
-    // var w = $(window).width();
 
-    // console.log(h, w);
-    // if (h >= 600) {
-    //     $(".contentsWrapper figure img").css("width:50%");
-    // }
-    //.contentsWrapper figure img
 
 });
