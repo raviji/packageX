@@ -50,6 +50,7 @@ var ambientLight;
 function init( path)
 {
     var ele =  document.getElementById("outres");
+    var ele1 =  document.getElementById("outres1");
 
     imageTest = document.getElementById("imageTest");
 
@@ -63,6 +64,7 @@ function init( path)
     insideTexture.wrapS = insideTexture.wrapT = THREE.MirroredRepeatWrapping;
 
     initInput(ele);
+    initInput(ele1);
     projector = new THREE.Projector();
 
     // renderer
@@ -76,6 +78,7 @@ function init( path)
     renderer.domElement.className = "noBg";
 
     ele.appendChild(renderer.domElement);
+    ele1.appendChild(renderer.domElement);
 
     // camera
     camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 2*currentScale, 2500*Math.max(1, currentScale));
